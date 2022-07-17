@@ -108,4 +108,8 @@ return packer.startup(function()
       require('neogit').setup()
     end
   }
+
+  use { 'tamago324/lir.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
 end)

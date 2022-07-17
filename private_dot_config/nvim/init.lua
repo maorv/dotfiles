@@ -20,6 +20,7 @@ require('plugins/nvim-lspconfig')
 require('plugins/nvim-treesitter')
 require('plugins/alpha-nvim')
 require('plugins/nvim-spellsitter')
+require('plugins/lir')
 --
 
 -- Mappings.
