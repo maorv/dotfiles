@@ -18,7 +18,7 @@ local opt = vim.opt         		      -- Set options (global/buffer/windows-scoped
 -----------------------------------------------------------
 -- General
 -----------------------------------------------------------
--- opt.mouse = 'a'                       -- Enable mouse support
+opt.mouse = ''                        -- Disable mouse visual mode support
 opt.clipboard = 'unnamedplus'         -- Copy/paste to system clipboard
 opt.swapfile = false                  -- Don't use swapfile
 opt.completeopt = 'menuone,noselect'  -- Autocomplete options
