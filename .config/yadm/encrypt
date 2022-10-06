@@ -1,0 +1,4 @@
+.ssh/*
+!.ssh/authorized_keys
+!.ssh/known_hosts*
+!.ssh/google*
