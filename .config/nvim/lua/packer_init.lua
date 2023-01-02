@@ -67,15 +67,6 @@ return packer.startup(function()
     requires = { 'kyazdani42/nvim-web-devicons' },
   }
 
-  -- git labels
-  -- use {
-  --   'lewis6991/gitsigns.nvim',
-  --   requires = { 'nvim-lua/plenary.nvim' },
-  --   config = function()
-  --     require('gitsigns').setup()
-  --   end
-  -- }
-
   -- Dashboard (start screen)
   use {
     'goolord/alpha-nvim',
@@ -92,7 +83,7 @@ return packer.startup(function()
   use {
     'numToStr/Comment.nvim',
     config = function()
-        require('Comment').setup()
+      require('Comment').setup()
     end
   }
 
@@ -112,4 +103,11 @@ return packer.startup(function()
   use { 'tamago324/lir.nvim',
     requires = { 'nvim-lua/plenary.nvim' }
   }
+
+  -- git plugin
+  use {
+  'tanvirtin/vgit.nvim',
+   requires = 'nvim-lua/plenary.nvim',
+  }
+
 end)
