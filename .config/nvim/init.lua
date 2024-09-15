@@ -7,8 +7,8 @@ Website: https://github.com/brainfucksec/neovim-lua
 
 --]]
 
+require("config.lazy")
 -- Import Lua modules
-require('packer_init')
 require('core/settings')
 require('core/keymaps')
 require('core/statusline')
