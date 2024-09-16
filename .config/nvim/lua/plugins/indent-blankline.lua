@@ -1,28 +1,9 @@
------------------------------------------------------------
--- Indent line configuration file
------------------------------------------------------------
-
--- Plugin: indent-blankline
--- url: https://github.com/lukas-reineke/indent-blankline.nvim
-
-
-require('ibl').setup {
-  indent = {
-    char = " "
-  },
-  exclude = {
-    filetypes = {
-      'help',
-      'git',
-      'markdown',
-      'text',
-      'terminal',
-      'lspinfo',
-      'packer',
-    },
-    buftypes = {
-      'terminal',
-      'nofile',
-    }
-  }
+local M = {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {},
 }
+
+return M

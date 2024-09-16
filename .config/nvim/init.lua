@@ -11,18 +11,8 @@ require("config.lazy")
 -- Import Lua modules
 require('core/settings')
 require('core/keymaps')
-require('core/statusline')
---require('plugins/nvim-tree')
-require('plugins/indent-blankline')
-require('plugins/vista')
-require('plugins/nvim-cmp')
-require('plugins/nvim-lspconfig')
-require('plugins/nvim-treesitter')
-require('plugins/alpha-nvim')
-require('plugins/nvim-spellsitter')
-require('plugins/lir')
-require('plugins/vgit')
---
+-- require('core/colors')
+-- require('core/statusline')
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
