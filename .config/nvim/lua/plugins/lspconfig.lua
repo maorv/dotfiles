@@ -68,6 +68,12 @@ return {
         nvim_lsp["gopls"].setup({
           on_attach = on_attach,
           capabilities = capabilities,
+          settings = {
+            gopls = {
+              buildFlags = { "-tags=integration" }, -- Set your Go build tags here
+            },
+          },
+
         })
       end,
       ["clangd"] = function()

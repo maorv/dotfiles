@@ -121,5 +121,6 @@ require("lazy").setup({
       "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
     },
-  }
+  },
+
 })
