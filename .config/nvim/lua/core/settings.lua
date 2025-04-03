@@ -100,7 +100,7 @@ exec([[
 ]], false)
 
 -- Remove whitespace on save
-cmd [[autocmd BufWritePre * :%s/\s\+$//e]]
+-- cmd [[autocmd BufWritePre * :%s/\s\+$//e]]
 
 -- Don't auto commenting new lines
 cmd [[autocmd BufEnter * set fo-=c fo-=r fo-=o]]
