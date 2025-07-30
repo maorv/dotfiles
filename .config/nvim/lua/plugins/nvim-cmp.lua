@@ -50,6 +50,7 @@ M.config = function()
     filetypes = {
       cpp = true,                     -- Enable Copilot for C++
       go = true,                      -- Enable Copilot for Go
+      lua = true,
       python = true,                  -- Enable Copilot for Python
       ["*"] = false,                  -- Disable Copilot for all other file types
     },
