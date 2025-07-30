@@ -14,6 +14,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+vim.opt.syntax = 'on'
+vim.opt.filetype = 'on'
+
 
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
@@ -101,7 +104,7 @@ require("lazy").setup({
 
   {
     "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
+    branch = "main",
     dependencies = {
       { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
       { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
@@ -123,4 +126,5 @@ require("lazy").setup({
     },
   },
 
+  { "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
 })
